@@ -1,0 +1,45 @@
+{
+	"name": "pl_delete",
+	"properties": {
+		"activities": [
+			{
+				"name": "delTestSource",
+				"type": "Delete",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_test_source",
+						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "ls_dl_orders",
+							"type": "LinkedServiceReference"
+						},
+						"path": "test"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Udemy ADF"
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-11-22T09:03:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

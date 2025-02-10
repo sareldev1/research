@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_u3m",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_xtest_lake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Product_Lookup",
+				"folderPath": "Raw",
+				"fileSystem": "xtest"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

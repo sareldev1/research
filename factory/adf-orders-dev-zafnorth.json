@@ -1,0 +1,15 @@
+{
+	"name": "adf-orders-dev-zafnorth",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "847f9988-27eb-42c3-9a84-b27ffaf869be",
+		"tenantId": "5a805723-1fc8-4de7-a5d1-d34826ffcb18",
+		"userAssignedIdentities": {
+			"/subscriptions/3f4b2d8b-d2a4-405f-988a-967dec436337/resourcegroups/rg-orders-dev-zafnorth-001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uami-orders": {
+				"clientId": "690db968-0312-4ce0-9498-2297249eae67",
+				"principalId": "01879b88-e3aa-4b84-b806-279d0967e010"
+			}
+		}
+	}
+}

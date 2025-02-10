@@ -1,0 +1,37 @@
+{
+	"name": "pl_orders_cleansed_to_structured",
+	"properties": {
+		"activities": [
+			{
+				"name": "df_orders_cleansed_to_structured",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.00:10:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "df_orders_cleansed_to_structured",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"folder": {
+			"name": "Udemy ADF"
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-11-22T09:03:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
